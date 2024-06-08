@@ -165,6 +165,7 @@ public class LoginActivity extends AppCompatActivity {
                                 .addOnSuccessListener(authResult -> {
                                     Log.i("Signup", "Sign-in Successful for: " + emailFromDB + " - UID - " + auth.getCurrentUser().getUid());
                                     startActivity(intent);
+                                    Log.i("Signup", "Intent successful");
                                     finish();
                                 }).addOnFailureListener(e -> Log.i("Signup", "Sign-in failed for: " + emailFromDB + " - UID - " + auth.getCurrentUser().getUid() + " - " + e.getMessage()));
                     } else {
