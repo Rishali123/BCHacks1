@@ -3,6 +3,7 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
@@ -10,9 +11,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< Updated upstream
         maven { url = uri("https://jitpack.io" )}
         jcenter()
 
+=======
+        maven { url = uri("https://jitpack.io") }
+>>>>>>> Stashed changes
     }
 
 

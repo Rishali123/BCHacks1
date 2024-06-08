@@ -6,5 +6,12 @@
 
     </style>
 
+    <style name="Shape" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+
+
     <style name="Theme.BCHacks" parent="Base.Theme.BCHacks" />
+
+
 </resources>
