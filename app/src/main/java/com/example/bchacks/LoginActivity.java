@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
         if (user != null) {
             // Navigate to main activity
             Log.i("Login", "In UpdateUI ");
-            Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(LoginActivity.this, SwipeActivity.class);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Please sign in to continue", Toast.LENGTH_SHORT).show();
@@ -148,7 +148,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         loginUsername.setError(null);
                         Log.i("Signup", "Going to profile");
-                        Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, SwipeActivity.class);
 
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("email", emailFromDB);
