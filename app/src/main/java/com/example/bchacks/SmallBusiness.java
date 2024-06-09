@@ -25,7 +25,7 @@ public class SmallBusiness extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             String time = intent.getStringExtra("time");
             int ingredients = intent.getIntExtra("ingredients", R.string.maggiIngredients);
-            int desc = intent.getIntExtra("desc", R.string.maggieDesc);
+            int desc = intent.getIntExtra("desc", R.string.ArberDesc);
             int image = intent.getIntExtra("image", R.drawable.investor);
 
             binding.detailName.setText(name);
