@@ -89,4 +89,22 @@ Add the maggi masala on to it
 \nWait for 2 mins
 \nMaggi is ready!</string>
 
+    <string name="ArberDesc"> We makes nutrients for plants
+\nLooking for investors who love the environment
+\nRequesting $5000 for 30% of company
+\nBased in Renton
+\nOpen to negotiate</string>
+
+    <string name="FlossDesc">Business that is focused on dental hygiene
+\nLooking for partners with experience in dental industry
+\nWilling to offer 10% of company for $20000
+\nOffices in Yakima, Seattle, and Lynwood
+\nExicted for potential partnerships!</string>
+
+    <string name="ProvenDesc">Small Beauty Company that specializes in skincare
+\nInterested in investors that can offer guidance on expanding into retail stores
+\nCurrently online-based
+\nLooking for $45,000 investment
+\nHave formula patents for products</string>
+
 </resources>
