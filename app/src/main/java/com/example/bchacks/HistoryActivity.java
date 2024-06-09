@@ -29,6 +29,7 @@ public class HistoryActivity extends AppCompatActivity {
         int[] imageList = {R.drawable.arberplantcare, R.drawable.flauselectricflosser, R.drawable.provenskincare};
         //int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients};
         int[] descList = { R.string.ArberDesc, R.string.FlossDesc, R.string.ProvenDesc};
+        int[] monList = { R.string.Arber, R.string.Floss, R.string.Proven};
         String[] nameList = {"Arber Plant Care", "Lily's Dental Hygiene", "Proven Cosmetics"};
         //String[] timeList = {"30 mins", "2 mins", "45 mins","10 mins", "60 mins", "45 mins", "30 mins"};
 
@@ -49,6 +50,7 @@ public class HistoryActivity extends AppCompatActivity {
                 //intent.putExtra("ingredients", ingredientList[i]);
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
+                intent.putExtra("image", monList[i]);
                 Log.i("History", "Going to intent");
                 startActivity(intent);
             }
