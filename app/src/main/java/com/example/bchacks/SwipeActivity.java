@@ -31,6 +31,7 @@ public class SwipeActivity extends AppCompatActivity {
         Log.i("Swipe", "Check 4");
         koloda.setAdapter(adapter);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Home);
@@ -50,6 +51,9 @@ public class SwipeActivity extends AppCompatActivity {
             }
             return false;
         });
+=======
+        Log.i("Swipe", "Check 5");
+>>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
 =======
         Log.i("Swipe", "Check 5");
 >>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)

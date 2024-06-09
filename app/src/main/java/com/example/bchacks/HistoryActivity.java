@@ -49,7 +49,10 @@ public class HistoryActivity extends AppCompatActivity {
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Log.i("History", "Going to intent");
+=======
+>>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
 =======
 >>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
                 startActivity(intent);

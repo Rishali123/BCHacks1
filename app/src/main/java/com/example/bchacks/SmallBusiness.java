@@ -18,8 +18,11 @@ public class SmallBusiness extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Log.i("History", "Entered");
 
+=======
+>>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
 =======
 >>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
         Intent intent = this.getIntent();
