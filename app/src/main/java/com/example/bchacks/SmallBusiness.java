@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.example.bchacks.databinding.SmallBusinessBinding;
 
@@ -18,8 +17,11 @@ public class SmallBusiness extends AppCompatActivity {
         binding = SmallBusinessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+<<<<<<< HEAD
         Log.i("History", "Entered");
 
+=======
+>>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
         Intent intent = this.getIntent();
         if (intent != null){
             String name = intent.getStringExtra("name");

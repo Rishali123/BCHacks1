@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -49,7 +48,10 @@ public class HistoryActivity extends AppCompatActivity {
                 intent.putExtra("ingredients", ingredientList[i]);
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
+<<<<<<< HEAD
                 Log.i("History", "Going to intent");
+=======
+>>>>>>> parent of 3620c09 (Merge branch 'main' of https://github.com/Rishali123/BCHacks1)
                 startActivity(intent);
             }
         });
