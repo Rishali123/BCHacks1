@@ -77,5 +77,16 @@
                 android:textColor="@color/red"
                 android:textSize="18sp" />
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
 </LinearLayout>
