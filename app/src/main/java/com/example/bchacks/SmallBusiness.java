@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.bchacks.databinding.SmallBusinessBinding;
+
 
 public class SmallBusiness extends AppCompatActivity {
 
@@ -13,10 +15,12 @@ public class SmallBusiness extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("yooo", "Yay!");
         super.onCreate(savedInstanceState);
         binding = SmallBusinessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        Log.i("Listssss", "Yay!");
         Intent intent = this.getIntent();
         if (intent != null){
             String name = intent.getStringExtra("name");

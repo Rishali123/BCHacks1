@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation = "vertical"
     android:layout_height="match_parent"
-    android:gravity= "center"
+    android:background="@color/green"
     tools:context=".SwipeActivity">
 
+    <!-- Koloda View -->
     <com.yalantis.library.Koloda
         android:id="@+id/koloda"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/frame_bottom_navigation"
         app:koloda_card_layout="@layout/item_koloda" />
 
+    <!-- FrameLayout to center BottomNavigationView -->
+    <FrameLayout
+        android:id="@+id/frame_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
 
-</LinearLayout>
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_background"
+            android:elevation="8dp"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_menu" />
+    </FrameLayout>
+
+</RelativeLayout>

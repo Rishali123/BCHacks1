@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -47,6 +48,7 @@ public class HistoryActivity extends AppCompatActivity {
                 intent.putExtra("ingredients", ingredientList[i]);
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
+                Log.i("cool", "Yay!" + intent);
                 startActivity(intent);
             }
         });
