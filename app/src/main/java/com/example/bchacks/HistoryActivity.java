@@ -26,7 +26,7 @@ public class HistoryActivity extends AppCompatActivity {
         binding = ActivityHistoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        int[] imageList = {R.drawable.investor, R.drawable.investor, R.drawable.investor, R.drawable.investor, R.drawable.investor, R.drawable.investor, R.drawable.investor};
+        int[] imageList = {R.drawable.arberplantcare, R.drawable.flauselectricflosser, R.drawable.glovewrap, R.drawable.legovaccum, R.drawable.nutrnutmilkmachine, R.drawable.provenskincare};
         int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients};
         int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.pizzaDesc, R.string.burgerDesc, R.string.friesDesc};
         String[] nameList = {"Pasta", "Maggi", "Cake", "Pancake", "Pizza","Burgers", "Fries"};

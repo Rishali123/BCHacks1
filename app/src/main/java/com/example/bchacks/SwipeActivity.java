@@ -26,14 +26,14 @@ public class SwipeActivity extends AppCompatActivity {
 
         // Initialize dataList with different data
         dataList = new ArrayList<>();
-        dataList.add(new YourModel("John Doe", "Software Developer", R.drawable.investor));
-        dataList.add(new YourModel("Jane Smith", "Graphic Designer", R.drawable.investor1));
-        dataList.add(new YourModel("Lily Smith", "Baker", R.drawable.investor2));
-        dataList.add(new YourModel("Dhanasri Prabhu", "Loser", R.drawable.investor3));
-        dataList.add(new YourModel("Aisha Rana", "Project Manager", R.drawable.investor4));
-        dataList.add(new YourModel("Bob Furgerson", "Data Analyst", R.drawable.investor5));
-        dataList.add(new YourModel("Jeff Bezoz", "CEO", R.drawable.investor6));
-        dataList.add(new YourModel("Rohana Joshi", "Software Developer", R.drawable.investor));
+        dataList.add(new YourModel("Arber Plant Care", "Agriculture", R.drawable.arberplantcare));
+        dataList.add(new YourModel("Cafe Con Leche", "Food, Service", R.drawable.cafeconleche));
+        dataList.add(new YourModel("Lily's Dental Hygiene", "Personal Health", R.drawable.flauselectricflosser));
+        dataList.add(new YourModel("Glove Wrap", "Sports, Merchandise", R.drawable.glovewrap));
+        dataList.add(new YourModel("Lego Vaccum", "Cleaning Supplies", R.drawable.legovaccum));
+        dataList.add(new YourModel("Nut Milk Maker", "Food Machinery", R.drawable.nutrnutmilkmachine));
+        dataList.add(new YourModel("Pie Sodas", "Beverages", R.drawable.piewineforpizza));
+        dataList.add(new YourModel("Proven Cosmetics", "Skincare and Beauty", R.drawable.provenskincare));
 
         // Add more data as needed
 
