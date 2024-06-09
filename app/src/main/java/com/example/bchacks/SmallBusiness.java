@@ -33,6 +33,7 @@ public class SmallBusiness extends AppCompatActivity {
             binding.detailDesc.setText(desc);
             binding.detailIngredients.setText(ingredients);
             binding.detailImage.setImageResource(image);
+            //
         }
     }
 }
