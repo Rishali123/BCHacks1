@@ -6,11 +6,7 @@
         android:title="History"
         android:icon="@drawable/baseline_history_24"/>
     <item
-<<<<<<< HEAD
         android:id="@+id/Home"
-=======
-        android:id="@+id/home"
->>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
         android:title="Home"
         android:icon="@drawable/baseline_home_24"/>
     <item
