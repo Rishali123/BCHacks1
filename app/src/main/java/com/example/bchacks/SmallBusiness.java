@@ -24,14 +24,14 @@ public class SmallBusiness extends AppCompatActivity {
         if (intent != null){
             String name = intent.getStringExtra("name");
             String time = intent.getStringExtra("time");
-            int ingredients = intent.getIntExtra("ingredients", R.string.maggiIngredients);
+            //int ingredients = intent.getIntExtra("ingredients", R.string.maggiIngredients);
             int desc = intent.getIntExtra("desc", R.string.ArberDesc);
             int image = intent.getIntExtra("image", R.drawable.investor);
 
             binding.detailName.setText(name);
-            binding.detailTime.setText(time);
+            //binding.detailTime.setText(time);
             binding.detailDesc.setText(desc);
-            binding.detailIngredients.setText(ingredients);
+            //binding.detailIngredients.setText(ingredients);
             binding.detailImage.setImageResource(image);
         }
     }
