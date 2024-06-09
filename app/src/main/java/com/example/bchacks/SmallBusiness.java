@@ -20,6 +20,12 @@ public class SmallBusiness extends AppCompatActivity {
         binding = SmallBusinessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+<<<<<<< HEAD
+        Log.i("History", "Entered");
+
+=======
+        Log.i("Listssss", "Yay!");
+>>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
         Intent intent = this.getIntent();
         if (intent != null){
             String name = intent.getStringExtra("name");
