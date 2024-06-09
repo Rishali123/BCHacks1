@@ -74,7 +74,7 @@ public class ProfileActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.Home) {
-                startActivity(new Intent(getApplicationContext(), SwipeActivity.class));
+                startActivity(new Intent(getApplicationContext(), CardAdapter.class));
                 finish();
                 return true;
             } else if (itemId == R.id.Profile) {

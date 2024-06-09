@@ -12,9 +12,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -84,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
         if (user != null) {
             // Navigate to main activity
             Log.i("Login", "In UpdateUI ");
-            Intent intent = new Intent(LoginActivity.this, SwipeActivity.class);
+            Intent intent = new Intent(LoginActivity.this, CardAdapter.class);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Please sign in to continue", Toast.LENGTH_SHORT).show();
@@ -148,7 +145,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         loginUsername.setError(null);
                         Log.i("Signup", "Going to profile");
-                        Intent intent = new Intent(LoginActivity.this, SwipeActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, CardAdapter.class);
 
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("email", emailFromDB);

@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".SwipeActivity">
+    tools:context=".CardAdapter">
 
     <!-- Koloda View -->
+
+    <!-- FrameLayout to center BottomNavigationView -->
+
     <com.yalantis.library.Koloda
         android:id="@+id/koloda"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="800dp"
         android:layout_above="@id/frame_bottom_navigation"
+        android:layout_marginBottom="-36dp"
         app:koloda_card_layout="@layout/item_koloda" />
 
-    <!-- FrameLayout to center BottomNavigationView -->
     <FrameLayout
         android:id="@+id/frame_bottom_navigation"
         android:layout_width="match_parent"

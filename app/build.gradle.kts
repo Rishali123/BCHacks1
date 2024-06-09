@@ -21,8 +21,8 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
             )
         }
     }
@@ -53,4 +53,5 @@ dependencies {
 
     implementation ("com.github.Yalantis:Koloda-Android:v0.0.2-alpha")
 
+    implementation ("com.yuyakaido.android:card-stack-view:2.3.4")
 }
