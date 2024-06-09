@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.bchacks.databinding.ActivityHistoryBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -47,8 +49,29 @@ public class HistoryActivity extends AppCompatActivity {
                 intent.putExtra("ingredients", ingredientList[i]);
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
+                Log.i("History", "Going to intent");
                 startActivity(intent);
             }
+        });
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.Home);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.Home) {
+                startActivity(new Intent(getApplicationContext(), SwipeActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.Profile) {
+                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.History) {
+                return true;
+            }
+            return false;
         });
     }
 }

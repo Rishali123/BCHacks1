@@ -2,9 +2,10 @@ package com.example.bchacks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.yalantis.library.Koloda;
 
 import java.util.ArrayList;
@@ -38,5 +39,24 @@ public class SwipeActivity extends AppCompatActivity {
 
         adapter = new SwipeAdapter(this, dataList);
         koloda.setAdapter(adapter);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.Home);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.Home) {// Do nothing if already in home
+                return true;
+            } else if (itemId == R.id.Profile) {
+                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                finish();
+                return true;
+            } else if (itemId == R.id.History) {
+                startActivity(new Intent(getApplicationContext(), HistoryActivity.class));
+                finish();
+                return true;
+            }
+            return false;
+        });
     }
 }

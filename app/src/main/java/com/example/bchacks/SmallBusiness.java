@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.bchacks.databinding.SmallBusinessBinding;
 
@@ -16,6 +17,8 @@ public class SmallBusiness extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = SmallBusinessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Log.i("History", "Entered");
 
         Intent intent = this.getIntent();
         if (intent != null){
