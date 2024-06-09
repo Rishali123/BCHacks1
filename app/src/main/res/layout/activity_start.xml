@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/orange">
+    android:background="@color/green">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
