@@ -148,7 +148,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         loginUsername.setError(null);
                         Log.i("Signup", "Going to profile");
-                        Intent intent = new Intent(LoginActivity.this, SwipeActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, HistoryActivity.class);
 
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("email", emailFromDB);
