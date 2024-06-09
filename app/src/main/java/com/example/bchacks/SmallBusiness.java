@@ -8,18 +8,24 @@ import android.util.Log;
 
 import com.example.bchacks.databinding.SmallBusinessBinding;
 
+
 public class SmallBusiness extends AppCompatActivity {
 
     SmallBusinessBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("yooo", "Yay!");
         super.onCreate(savedInstanceState);
         binding = SmallBusinessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+<<<<<<< HEAD
         Log.i("History", "Entered");
 
+=======
+        Log.i("Listssss", "Yay!");
+>>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
         Intent intent = this.getIntent();
         if (intent != null){
             String name = intent.getStringExtra("name");

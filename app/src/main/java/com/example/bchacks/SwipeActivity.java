@@ -39,6 +39,7 @@ public class SwipeActivity extends AppCompatActivity {
 
         adapter = new SwipeAdapter(this, dataList);
         koloda.setAdapter(adapter);
+<<<<<<< HEAD
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.Home);
@@ -58,5 +59,7 @@ public class SwipeActivity extends AppCompatActivity {
             }
             return false;
         });
+=======
+>>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
     }
 }

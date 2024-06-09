@@ -5,5 +5,9 @@
         android:color="@color/white"/>
     <item
         android:state_selected="false"
+<<<<<<< HEAD
         android:color="@color/white"/>
+=======
+        android:color="@color/red"/>
+>>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
 </selector>

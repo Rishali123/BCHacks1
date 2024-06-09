@@ -49,7 +49,11 @@ public class HistoryActivity extends AppCompatActivity {
                 intent.putExtra("ingredients", ingredientList[i]);
                 intent.putExtra("desc", descList[i]);
                 intent.putExtra("image", imageList[i]);
+<<<<<<< HEAD
                 Log.i("History", "Going to intent");
+=======
+                Log.i("cool", "Yay!" + intent);
+>>>>>>> 3620c09f5d877334cd803beda3d2c7363e7ebb5e
                 startActivity(intent);
             }
         });
