@@ -6,50 +6,61 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
 import java.util.List;
 
 public class SwipeAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Integer> List;
+    private List<YourModel> dataList;
 
-    public SwipeAdapter(Context context, java.util.List<Integer> list) {
-        Log.i("Swipe", "Verify 1");
+    public SwipeAdapter(Context context, List<YourModel> dataList) {
         this.context = context;
-        Log.i("Swipe", "Verify 2");
-        List = list;
-        Log.i("Swipe", "Verify 3");
+        this.dataList = dataList;
     }
 
     @Override
     public int getCount() {
-        return 20;
+        return dataList.size();
     }
-
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return dataList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
-
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
-        Log.i("Swipe", "Verify 7");
         if (convertView == null) {
-            Log.i("Swipe", "Verify 8");
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_koloda, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.item_koloda, parent, false);
         } else {
             view = convertView;
-            Log.i("Swipe", "Verify 9");
         }
-        Log.i("Swipe", "Verify 10");
+
+        TextView name = view.findViewById(R.id.profileName);
+        TextView pitch = view.findViewById(R.id.profileDescription);
+        ImageView image = view.findViewById(R.id.image);
+
+        // Get the current item from the dataList
+        YourModel currentItem = dataList.get(position);
+
+        // Set the text for the profile name and description
+        name.setText(currentItem.getProfileName());
+        pitch.setText(currentItem.getProfileDescription());
+
+        // Set the image resource
+        image.setImageResource(currentItem.getImageResource());
+
         return view;
     }
+
 }
